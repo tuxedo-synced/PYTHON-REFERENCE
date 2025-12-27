@@ -1,0 +1,3 @@
+select a word -> press ctrl + f2 -> entire code containing the word get cursor pointing to it .
+
+to erase the git previous history shown at graphs press -> git checkout --orphan fresh-start
