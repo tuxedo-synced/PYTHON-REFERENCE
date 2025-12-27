@@ -1,3 +1,11 @@
 select a word -> press ctrl + f2 -> entire code containing the word get cursor pointing to it .
 
 to erase the git previous history shown at graphs press -> git checkout --orphan fresh-start
+
+to delete the git hub credentials (login info):
+    1. click windows + R
+    2. type control keymgr.dll
+    3. go to windows credentials 
+    4. REMOVE ALL entries related to:
+        git:https://github.com
+        github.com
