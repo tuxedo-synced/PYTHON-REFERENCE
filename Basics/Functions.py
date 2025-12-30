@@ -15,13 +15,14 @@
 # 2. Default Arguments – Parameters that have preset values if not provided.
 # 3. Keyword Arguments – Arguments passed with parameter names, so order doesn’t matter.
 # 4. Arbitrary Arguments – Accepts variable numbers of values using *args or **kwargs.
+#   TRICK :-  K A D A P A -> remove duplicates -> K A D P 
 
 # default argumnets - A default value for certain parameters 
 #                       default is used when that argument is omitted
 #                       make your functions more flexible, reducing of arguments
 
 
-def net_price(list_price,discount=0,tax=0.05):      # discount  is max times 0 and tax is 0.0.5 so initiaise it at the parameters place itself .
+def net_price(list_price,discount=0,tax=0.05):      # discount is max times 0 and tax is 0.0.5 so initiaise it at the parameters place itself .
     return list_price * (1-discount) * (1+tax) 
 
 print(net_price(500))
@@ -38,9 +39,12 @@ empDetails(greet="hello",designation="Manager",name="Sudhakar",salary="1,00,000"
 
 # *args - allows you to pass multiple non key aurguments
 # **kwargs - allows you to pass multiple keyword-aurguments 
-#           * unpacking operator
+#           * -> unpacking operator
+# Unpacking operator -> lets you extract or expand elements from a collection (list , tuple or dictionary) insterd of treating it as an single object .
+# * -> for iterables (list , tuple , set , string)
+# ** -> for dictionaries
 
-def add(*args):
+def add(*args):         # the arguments passed are converted as a tuple not list .
     total = 0 
     for i in args:
         total+=i
