@@ -53,7 +53,7 @@ def add(*args):         # the arguments passed are converted as a tuple not list
 print(add(1,2))
 print(add(3,4,6))
 
-def print_address(**kwargs):
+def print_address(**kwargs):    # the arguments passed are converted as a dictionary .
     print(type(kwargs))
     for i,j in kwargs.items():
         print(f"{i}: {j}")
