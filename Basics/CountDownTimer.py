@@ -42,6 +42,6 @@ for x in range(timer,0,-1):
     sec = x % 60 
     print(f"clock ticking: {hr}:{min}:{sec}")
     time.sleep(1)
-print("Exiting\n\n\n")
+print("Time up\n\n\n")
 
 
