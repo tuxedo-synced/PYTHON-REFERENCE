@@ -1,0 +1,60 @@
+File Detection :-
+#   import os 
+#   os.path.exits({file_path})
+#   os.path.isfile({file_path})
+#   os.path.isfile({file_path}) and {file_path}.endswith("{.csv / .json}") # default .txt so no need of .endswith representation .
+
+Create CSV :-
+#   import csv
+#   with open({file_path},"w",newline = "") as file:
+#       writer = csv.writer(file)
+#       for row in writer:
+#           writer.writerow(row)
+#   newline parameter is added to avoid extra blanck places (can also check by removing the paraameter and running it) .
+
+Create JSON :-
+#   import json
+#   represented by dictionaries
+#   with open({file_path},"w",newline=""):
+#       json.dump({data_to_write},file,indent={number_of_spaces_for_indentation})
+
+
+File Append :-
+#   with open({file_path},"a") as file:
+#       file.write({data_to_append} + "\n")
+#       the {data_to_append} is appended to the file the number of times user excecutes the script .
+
+File Write (same for all file types -> .txt , .csv , .json ) :-
+#   with open({file_path},"w") as file:
+#       file.write({data_to_write} + "\n") # \n is added only if needed .
+#       while writing data inside any file , the file is first cleared (also created if not exist) and then append the {data_to_write} .
+
+Reading a txt file :-
+#   with open({file_path},"r") as file:
+#       content = file.read()
+#       the {content} contain entire .txt file data .
+
+Reading a CSV file :-
+#   import csv
+#   with open({file_path},"r") as file:
+#       content = csv.reader(file)
+#       print(content)
+#       for every_line in content:
+#           print(every_line)
+#       file.seek(0)
+#       for every_line in contain:
+#           print(every_line[0], end = " ")
+#           print(every_line[1], end = " ")
+#           print(every_line[2], end = "\n")
+
+Reading a JSON file :-
+#   import json 
+#   with open({file_path},"r") as file:
+#       content = file.load(file)
+#       print(content)
+#       we can also print specific key values by content["specific_key"]
+
+# General errors cause :-
+# FileNotFoundError
+# PermissionError
+
