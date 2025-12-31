@@ -5,7 +5,7 @@ file_path = r"Files\test.txt"    # right click on file in vs code and select cop
 
 try:
 # with -> is a statement used to wrap a code block to excecute 
-# generally when u open file with 'with' keyword , it itsel close after performing the operation .
+# generally when u open file with 'with' keyword , it itself close after performing the operation .
     with open(file_path,"w") as file: # can also write as (file=file_path,mode="w")
         file.write("\n" + txt_data)
         print(f"text file {file_path} is saved .")
