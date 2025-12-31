@@ -7,4 +7,4 @@ try:
 except FileNotFoundError:
     print("The file was not found .")
 except PermissionError:
-    print("Ypu do not have permission to read that file .")
+    print("You do not have permission to read that file .")
