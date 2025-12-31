@@ -11,6 +11,7 @@
     finally:
         # Do some clean up
 """
+
 try:
     a = int(input("Enter number: "))
     print(1/a)
