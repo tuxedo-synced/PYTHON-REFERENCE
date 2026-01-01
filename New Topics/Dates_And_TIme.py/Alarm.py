@@ -8,7 +8,7 @@ import pygame
 
 def set_alarm(alarm_time):
     print(f"Alarm set over {alarm_time}")
-    sound_file = r"Dates_And_TIme.py\solo_leveling.mp3"
+    sound_file = r"New Topics\Dates_And_TIme.py\solo_leveling.mp3"
     is_running = True
 
     while is_running:
