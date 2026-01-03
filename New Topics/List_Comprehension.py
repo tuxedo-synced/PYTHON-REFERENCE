@@ -10,3 +10,5 @@ n = list(input("Enter a value: "))
 #           n = ['1','2','3','4','5','6','7','8','9']  
 a = [b for b in n if int(b) % 2 == 0]   
 print(a)
+
+# we can also construct list comprehension also without if condition , just the every element from iterable as a part of expression get effected .
