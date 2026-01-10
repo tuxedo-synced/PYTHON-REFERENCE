@@ -24,7 +24,7 @@ print(df,end = "\n\n")
 new_row = pd.DataFrame([{"Name": "Tsunade" , "Age": 106 , "Job": "Hokage"},
                         {"Name": "Hinata" , "Age": 53 , "Job": "Hokage Wife"},
                         ], index = ["Employee 4","Employee 5"])
-df = pd.concat([df , new_row])
+df = pd.concat([df, new_row])
 print(df)
 
 

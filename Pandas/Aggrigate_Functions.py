@@ -14,7 +14,7 @@ df = pd.read_csv(r"Pandas\Pokemon.csv", index_col = "name")
 
 # single coloumn 
 
-# print(df["height"].mean())
+print(df["height","weight"].mean())
 # print(df["height"].sum())
 # print(df["height"].min())
 # print(df["height"].max())
