@@ -11,18 +11,18 @@ df = pd.read_csv("Pandas/Pokemon.csv" , index_col = "name") # by this a coloumn 
 
 # selection by row/s
 # print(df.loc["Venusaur"])
-# print(df.loc["Venusaur":"Weedle":2, ["height","weight"]].to_string())
+print(df.loc["Venusaur":"Weedle":2, ["height","weight"]].to_string)
 # print(df.iloc[0:11:2 , 0:4:2])    # iloc[rowselection , coloumn selection]
 
 
 # Excercise 
-
+"""
 pokemon = input("Enter the pokemons name: ")
 try:
     print(df.loc[pokemon])
 except KeyError:
     print(f"{pokemon} is not registered .")
-
+"""
 
 
 
