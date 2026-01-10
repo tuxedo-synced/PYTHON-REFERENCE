@@ -15,8 +15,8 @@ df = pd.read_csv(r"Pandas\Pokemon.csv")
 # df = df.dropna(subset=["type2"])    # the rows are removed with NaN values .
 # print(df.to_string())
 
-# df = df.fillna({"type2": "None"})   # this helps in filling NaN values with some other preffered name .
-# print(df.to_string())
+df = df.fillna({"type2": "None"})   # this helps in filling NaN values with some other preffered name also some value like posiibly mean or any central tendancy to maintain the tuple .
+print(df.to_string())
 
 # 3. Fix inconsistent values
 # df["type1"] = df["type1"].replace({"Grass": "GRASS",
@@ -30,8 +30,8 @@ df = pd.read_csv(r"Pandas\Pokemon.csv")
 # print(df.to_string())
 
 # 5. Fix data types
-# df["legendary"] = df["legendary"].astype(bool)
-# print(df.to_string())
+df["legendary"] = df["legendary"].astype(bool)
+print(df.to_string())
 
 # 6. remove duplicate entries 
 # firstly add duplicates while practicing .
