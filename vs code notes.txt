@@ -15,3 +15,9 @@ Here if you face diffiulty in connecting .venv python then simply follow the ste
     1. press ctrl + shift + esc
     2. right click on vs code and end the task .
     3. reopen vs code and select kernal it will work fine .
+
+
+Here if you want to get into .venv in terminal :-
+    .\.venv\Scripts\Activate.ps1
+Here if you want to get out of .venv in terminal :-
+    deactivate
