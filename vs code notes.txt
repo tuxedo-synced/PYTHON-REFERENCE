@@ -9,3 +9,9 @@ to delete the git hub credentials (login info):
     4. REMOVE ALL entries related to:
         git:https://github.com
         github.com
+
+
+Here if you face diffiulty in connecting .venv python then simply follow the steps
+    1. press ctrl + shift + esc
+    2. right click on vs code and end the task .
+    3. reopen vs code and select kernal it will work fine .
